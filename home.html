@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home </title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <!-- animate.css v-4.1.1  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- bootstrap v-5.3.7 css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- font-awesome v-6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+    <!-- local style Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="home">
+    <header class=" bg-dark ">
+        <div class=" container d-flex justify-content-between align-items-center text-light p-2">
+            <div>
+                <h2 class="fs-6">Need help? Call us <span class="text-info-emphasis">1-800-123-4567</span></h2>
+            </div>
+            <div class="text-info d-none d-md-flex justify-content-center align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M13 10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189.374-2.691 1.118-3.512Q12.234 3.999 13.904 4H16v3h-2.1c-.498 0-.9.402-.9.899z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor"
+                        d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0" />
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M12 7.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 12a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0"
+                        clip-rule="evenodd" />
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container d-flex align-items-center ">
+            <a class="navbar-brand w-25 row" href="./home.html"><img class="col-12 col-md-6 "
+                    src="./Images/logo.png" alt="logo-img">
+            </a>
+
+            <button class="navbar-toggler border border-0 m-2 p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav fw-medium  ">
+                    <li class="nav-item ms-2">
+                        <a class="custom-nav-hover nav-link active " aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-2"><a class="custom-nav-hover nav-link" href="./about-us.html">About
+                            Us</a></li>
+                    <li class="nav-item ms-2"><a class="custom-nav-hover nav-link" href="./our-team.html">Our
+                            Team</a></li>
+                    <li class="nav-item ms-2"><a class="custom-nav-hover nav-link" href="./our-services.html">Our
+                            Services</a></li>
+                    <li class="nav-item ms-2"><a class="custom-nav-hover nav-link" href="./FAQ.html">FAQ</a></li>
+                    <li class="nav-item ms-2"><a class="custom-nav-hover nav-link" href="./news.html">News</a></li>
+
+                    <li class="nav-item ms-2">
+                        <a class="custom-nav-hover nav-link" href="./contact-us.html">Contact Us</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <a class="mx-3" href="./search.html">
+                <svg class="custom-nav-hover " xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="black" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.268 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37" />
+                </svg>
+            </a>
+
+
+        </div>
+
+    </nav>
+    <main class="home vh-100 wow animate__animated animate__flipInX">
+        <div class="h-100 w-100 bg-dark bg-opacity-25 d-flex align-items-center justify-content-center">
+            <h1 class="text-white fw-bold display-4">Smart Home</h1>
+        </div>
+    </main>
+    <section class="container home-cards">
+        <div class="cards row g-4">
+            <div class=" col-md-6 col-lg-3 mt-5  wow animate__animated animate__fadeInUp">
+                <div class="card rounded-5 text-center  p-4">
+                    <img class="border-0 rounded-circle m-auto p-2" src="./Images/access-control.png"
+                        alt="access-control">
+                    <h2 class="mt-3">Access Control</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur
+                    </p>
+                    <a class="m-auto w-auto text-dark text-decoration-none  border-bottom border-black " href="#">LEARN
+                        MORE</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3  wow animate__animated animate__fadeInUp">
+                <div class=" card rounded-5 text-center p-4 ">
+                    <img class="border-0 rounded-circle m-auto p-3" src="./Images/security.png" alt="access-control">
+                    <h2 class="mt-3">Security
+                    </h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur
+                    </p>
+                    <a class="m-auto w-auto text-dark text-decoration-none  border-bottom border-black " href="#">LEARN
+                        MORE</a>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3 mt-5 wow animate__animated animate__fadeInUp">
+                <div class="card rounded-5 text-center  p-4 ">
+                    <img class=" border-0 rounded-circle m-auto p-2" src="./Images/it-serv.png" alt="access-control">
+                    <h2 class="mt-3">IT Services
+                    </h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur
+                    </p>
+                    <a class="m-auto w-auto text-dark text-decoration-none  border-bottom border-black " href="#">LEARN
+                        MORE
+                    </a>
+                </div>
+            </div>
+
+            <div class=" col-md-6 col-lg-3  wow animate__animated animate__fadeInUp">
+                <div class="card rounded-5 text-center p-4 ">
+                    <img class=" border-0 rounded-circle m-auto p-2" src="./Images/doorbill-camera.png"
+                        alt="access-control">
+                    <h2 class="mt-3">Doorbell Camera
+                    </h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur
+                    </p>
+                    <a class="m-auto w-auto text-dark text-decoration-none  border-bottom border-black " href="#">LEARN
+                        MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-smart-home  py-5 ">
+        <div class="container">
+            <div class=" row">
+                <div class="details col-12 col-md-6 p-4 wow animate__animated animate__zoomIn rounded-5">
+
+                    <ul class="list-unstyled fw-medium lh-lg">
+                        <li class="mb-4">
+                            <h2>About Smart Home
+                            </h2>
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Smart Lighting Setup
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Media Room Setup
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Home Theater Setup
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Smart Doorbell Installation
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Smart Thermostat Installation
+                        </li>
+                        <li><i class="fas fa-check me-2"></i>Smart Door Lock Installation
+                        </li>
+                        <li class="mt-3"> <button type="button" class="p-3">GET INSPIRED</button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="image col-12 col-md-6 wow animate__animated animate__rotateIn"><img
+                        class="img-fluid w-100 h-100 rounded-5" src="./Images/about-smart-house.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class=" manage-everything bg-white py-5">
+        <div class="container">
+            <h2 class="text-center m-5 wow animate__animated animate__fadeInLeft">Manage Everything
+            </h2>
+            <div class="cards row g-4">
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card1 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Outdoor CCTV
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card2 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Temperature Controller
+
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card3 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Tracking
+
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card4 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Auto Control
+
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card5 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Motion Sensor
+
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4 mt-5  wow animate__animated animate__fadeInUp">
+                    <div class="card6 rounded-5  text-light">
+                        <div
+                            class="bg-dark rounded-5 p-4 bg-opacity-25 w-100 h-100 d-flex flex-column  justify-content-end">
+                            <hr class="h-2" />
+                            <h3>Heating Plan
+
+                            </h3>
+                            <p>Ut enim ad minim veniam
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="ready-to-build bg-white ">
+        <div class="container bg-image  p-0 ">
+            <div
+                class="h-100 w-100 px-5 bg-black text-white text-center lh-lg d-flex flex-column align-items-center justify-content-center bg-opacity-50">
+                <h2 class="wow animate__animated animate__fadeInDown">Ready to build a smarter home?
+                </h2>
+                <p class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam. .
+
+                </p>
+                <a class="custom-hover py-3 px-5 text-decoration-none fw-bold fs-5 text-white border border-2 border-white rounded-pill wow animate__animated animate__fadeInUpBig"
+                    href="#">
+                    GET FREE ESTIMATE
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about-smart-home bg-white m-0 py-5">
+        <div class="container py-5 ">
+            <div class=" row g-5">
+                <div class=" col-lg-6 m-auto wow animate__animated animate__fadeInLeft">
+                    <img class="col-12  rounded-5" src="./Images/about-1.jpg" alt="">
+                </div>
+                <div
+                    class="details bg-light  text-center col-lg-6  m-auto p-5 h-auto  rounded-5 wow animate__animated animate__flipInX ">
+                    <h2>Smarter Home. Simplified Life.</h2>
+                    <p class="lh-lg p-3 fs-6 fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="row py-3 g-5 ">
+                        <div class="col-md-4">
+                            <h2 class="custom-color">300+</h2>
+                            <h5>happy clients</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="custom-color">10+</h2>
+                            <h5>years of experience
+                            </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="custom-color">17</h2>
+                            <h5>awards
+
+                            </h5>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="what-people-say  py-5">
+        <div class="container ">
+            <h2 class="text-center wow animate__animated animate__zoomIn">What People Say?
+            </h2>
+            <div class="cards py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card border-0 rounded-5 p-5">
+                            <h3>Stella Larson
+                            </h3>
+                            <p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla
+                                facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl.
+                            </p>
+                            <div class="custom-color fs-5 fw-medium">
+                                <hr class="border-3" />
+                                <span>Monday, May 2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card border-0 rounded-5 p-5">
+                            <h3>Nick Jhonson
+
+                            </h3>
+                            <p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla
+                                facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl.
+                            </p>
+                            <div class="custom-color fs-5 fw-medium">
+                                <hr class="border-3" />
+                                <span>Monday, June 2024
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card border-0 rounded-5 p-5">
+                            <h3>Olga Ivanova
+
+                            </h3>
+                            <p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla
+                                facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl.
+                            </p>
+                            <div class="custom-color fs-5 fw-medium">
+                                <hr class="border-3" />
+                                <span>Monday, May 2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="our-works bg-white">
+        <div class="home custom-height wow animate__animated animate__flipInX">
+            <div class="container introduction text-center  lh-lg">
+                <h2 class="fs-1">Our Works
+                </h2>
+                <p class="mb-5 fs-3 pt-3 ">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident.
+                </p>
+            </div>
+        </div>
+        <div>
+
+            <div class="container images ">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper fix-image-height">
+                            <img src="./Images/work1.jpg" alt="Open Gallery" class="img-fluid rounded ">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper fix-image-height">
+                            <img src="./Images/work2.jpg" alt="Open Gallery" class="img-fluid rounded ">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper fix-image-height">
+                            <img src="./Images/work3.jpg" alt="Open Gallery" class="img-fluid rounded ">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper">
+                            <img src="./Images/work4.jpg" alt="Open Gallery" class="img-fluid rounded">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper">
+                            <img src="./Images/work5.jpg" alt="Open Gallery" class="img-fluid rounded">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageGalleryModal"
+                            class="image-hover-wrapper fix-image-height">
+                            <img src="./Images/work6.jpg" alt="Open Gallery" class="img-fluid rounded ">
+                            <div class="overlay"></div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="text-center py-5 wow animate__animated animate__fadeInUpBig">
+                    <a class="custom2-hover text-decoration-none custom-color fs-4 fw-medium border border-2 custom-border-color py-3 px-5 rounded-pill"
+                        href="#">VIEW MORE</a>
+                </div>
+
+
+                <!-- Modal Gallery with Carousel -->
+                <div class="modal fade" id="imageGalleryModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-body">
+                                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./Images/work1.jpg" class="d-block w-100  rounded" alt="Image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Images/work2.jpg" class="d-block w-100 rounded" alt="Image 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Images/work3.jpg" class="d-block w-100  rounded" alt="Image 3">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Images/work4.jpg" class="d-block w-100  rounded" alt="Image 4">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Images/work5.jpg" class="d-block w-100  rounded" alt="Image 5">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Images/work6.jpg" class="d-block w-100  rounded" alt="Image 6">
+                                        </div>
+                                        <!-- Add more carousel-item blocks as needed -->
+                                    </div>
+
+                                    <!-- Carousel Controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="all-devices bg-white ">
+        <div class="container bg-image  p-0 ">
+            <div
+                class="h-100 w-100 px-5 bg-black text-white text-center lh-lg d-flex flex-column align-items-center justify-content-center bg-opacity-50">
+                <h2 class="wow animate__animated animate__fadeInDown">All devices sync together at your home
+
+                </h2>
+                <p class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam. .
+
+                </p>
+                <a class="custom-hover py-3 px-5 text-decoration-none fw-bold fs-5 text-white border border-2 border-white rounded-pill wow animate__animated animate__fadeInUpBig"
+                    href="#">
+                    LEARN MORE
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="all-in-one bg-white">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 wow animate__animated animate__fadeInLeft">
+                    <div class="px-5">
+                        <h2>Your home’s all-in-one display hub
+                        </h2>
+                        <div class="row  ">
+                            <div class="col-md-6 col-lg-12 pt-5">
+                                <h4>Google Assistent
+                                </h4>
+                                <hr class="custom-color border-3" />
+                                <p>Sample text. Click to select the Text Element.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-12 pt-5">
+                                <h4>Chrome Cast Built-In
+                                </h4>
+                                <hr class="custom-color border-3" />
+                                <p>Sample text. Click to select the Text Element.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-12 pt-5">
+                                <h4>6.5MP Camera
+                                </h4>
+                                <hr class="custom-color border-3" />
+                                <p>Sample text. Click to select the Text Element.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-12 pt-5">
+                                <h4>10in HD Display
+                                </h4>
+                                <hr class="custom-color border-3" />
+                                <p>Sample text. Click to select the Text Element.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 p-5 wow animate__animated animate__rotateIn">
+                    <img class="w-100  rounded-5" src="./Images/display-hub.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-info">
+
+        <div class="container">
+            <div class="p-5 text-center lh-lg">
+                <h2 class="fs-1 wow animate__animated animate__zoomIn">Our Team</h2>
+                <p class="fs-3 wow animate__animated animate__fadeIn">Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+
+                </p>
+            </div>
+            <div class="cards p-5">
+                <div class="row g-3">
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card p-3 border-0 rounded-5">
+                            <img class="w-100  rounded-5" src="./Images/bob.jpg" alt="Bob Brown">
+                            <div class="text-center pt-3">
+                                <h3>Bob Brown</h3>
+                                <h5 class="job">creative leader</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card p-3 border-0 rounded-5">
+                            <img class="w-100  rounded-5" src="./Images/mary.jpg" alt="Mary Smith">
+                            <div class="text-center pt-3">
+                                <h3>Mary Smith
+                                </h3>
+                                <h5 class="job">Chief Accountant
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow animate__animated animate__fadeInUpBig">
+                        <div class="card p-3 border-0 rounded-5">
+                            <img class="w-100  rounded-5" src="./Images/nick.jpg" alt="Nick Dark">
+                            <div class="text-center pt-3">
+                                <h3>Nick Dark
+                                </h3>
+                                <h5 class="job">sales manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="  facts-and-questions bg-white py-5">
+        <div class="container p-2">
+            <div class="text-center">
+                <h2 class="fs-1 py-3 wow animate__animated animate__zoomIn">Facts & Questions
+                </h2>
+                <p class="fs-5 wow animate__animated animate__zoomIn">Sample text. Click to select the text box. Click
+                    again or double click to start editing
+                    the text.
+
+                </p>
+            </div>
+            <div class="container">
+                <div class="accordion py-2" id="accordionExample">
+                    <div class="accordion-item border-0 py-2">
+                        <h2 class="accordion-header border-5 rounded-pill">
+                            <button class="btn-faq text-black accordion-button rounded-pill p-4 fs-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                How much does it cost?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body lh-lg fw-medium fs-5 py-5">
+                                <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+                                    suscipit
+                                    ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor,
+                                    et
+                                    ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
+                                    odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 py-2">
+                        <h2 class="accordion-header border-5 rounded-pill ">
+                            <button class="btn-faq text-black accordion-button   rounded-pill p-4 fs-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                aria-controls=" collapseTwo">
+                                How Fast Are Your Services?
+                            </button>
+                        </h2>
+
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body lh-lg fw-medium fs-5 py-5">
+                                <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+                                    suscipit
+                                    ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor,
+                                    et
+                                    ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
+                                    odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion-item border-0 py-2">
+                        <h2 class="accordion-header  rounded-pill">
+                            <button class="btn-faq text-black accordion-button  border-5 rounded-pill p-4 fs-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="true" aria-controls="collapseThree">
+                                What types of customers have you worked with?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body lh-lg fw-medium fs-5 py-5">
+                                <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+                                    suscipit
+                                    ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor,
+                                    et
+                                    ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
+                                    odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 py-2">
+                        <h2 class="accordion-header  rounded-pill ">
+                            <button class="btn-faq text-black accordion-button  rounded-pill p-4 fs-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                aria-controls="collapseFour">
+                                What education and/or training do you have that relates to your work?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body lh-lg fw-medium fs-5 py-5">
+                                <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+                                    suscipit
+                                    ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor,
+                                    et
+                                    ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
+                                    odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 py-2">
+                        <h2 class="accordion-header ">
+                            <button class=" btn-faq text-black accordion-button rounded-pill p-4 fs-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                                aria-controls="collapseFive">
+                                Nunc sit amet nibh dolor. Integer iaculis nisi nec libero elementum?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body lh-lg fw-medium fs-5 py-5">
+                                <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+                                    suscipit
+                                    ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor,
+                                    et
+                                    ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
+                                    odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    <section class="contact-us my-4 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  mb-5 wow animate__animated animate__fadeInLeft">
+                    <h2>Make Smart Home Project
+                    </h2>
+                    <p>Sample text. Click to select the Text Element.
+
+                    </p>
+                    <form class="user-form rounded-5 p-5">
+                        <input class="bg-light w-100 p-3  border-0 rounded-pill my-3 fs-5" type="text"
+                            placeholder="Enter your Name" />
+                        <input class="bg-light w-100 p-3 border-0 rounded-pill my-3 fs-5" type="text"
+                            placeholder="Enter a valid email address" />
+                        <textarea class="bg-light col-12  p-3 border-0 rounded-5 my-3 fs-5" rows="5"
+                            placeholder="Enter your message"></textarea>
+                        <button class="btn rounded-pill  text-light fw-medium fs-3 px-5 py-2"
+                            type="submit">SEND</button>
+
+                    </form>
+                </div>
+                <div class="col-lg-6 m-auto wow animate__animated animate__fadeInRight ">
+                    <img class="w-100  rounded-5 object-fit-cover" src="./Images/contact-us.jpg" alt="contact-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="map-container" style="height: 400px; overflow: hidden;">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <footer id="footer" class=" bg-dark mt-5 lh-lg">
+        <div class="container">
+
+            <div class="row g-5 text-light py-5">
+                <div class=" col-md-6">
+                    <h2>Ready to get started?</h2>
+                    <p>Let’s talk about creating your competitive advantage.</p>
+                </div>
+                <div class=" col-md-6  wow animate__animated animate__fadeInUpBig">
+                    <a class="my-ptn text-decoration-none  fw-bold border-0 rounded-5 py-3 px-5 " href="#">TALK TO AN
+                        EXPERT</a>
+                </div>
+            </div>
+
+            <div class="row g-5 text-light pt-3  border-top border-1 mt-2 pb-5">
+                <div class="col-lg-4">
+                    <img class="my-3" src="./Images/logo-smart-white.png" alt="">
+                    <p>We offer fully customizable solutions that cater to individual needs.
+                    </p>
+                    <h4> <img class="me-2" src="./Images/location.png" alt="">7507 Dewey Route, East Darrylville,
+                        ME 36932, United States</h4>
+                    <a class="text-info text-decoration-none border-bottom border-info " href="#">show on map</a>
+                    <div class=" mt-3 text-info  justify-content-center align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M13 10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189.374-2.691 1.118-3.512Q12.234 3.999 13.904 4H16v3h-2.1c-.498 0-.9.402-.9.899z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M16 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M12 7.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 12a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0"
+                                clip-rule="evenodd" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-5 col-lg-4">
+                    <h2>Need help?</h2>
+                    <h4 class="fs-4 text-info my-4"><img src="./Images/telephone.png" alt="phone-img">+1-800-123-4567
+                    </h4>
+                    <p>Monday – Friday: 9:00-20:00</p>
+                    <p>Saturday: 11:00 – 15:00</p>
+                    <h4 class="border-top pt-3"><img class="me-2" src="./Images/email.png"
+                            alt="email-img">smarthome@support.com</h4>
+                </div>
+                <div class="links mt-5 col-lg-4">
+                    <h2>Quick ​Links</h2>
+                    <a class="d-block text-decoration-none text-light" href="./about-us.html">About Company</a>
+                    <a class="d-block text-decoration-none text-light" href="./our-services.html">Our Services</a>
+                    <a class="d-block text-decoration-none text-light" href="#">Blog</a>
+                    <a class="d-block text-decoration-none text-light" href="#">Testimonials</a>
+                    <a class="d-block text-decoration-none text-light" href="#">Area We Serve</a>
+                    <a class="d-block text-decoration-none text-light" href="#">Brands</a>
+                </div>
+            </div>
+            <div class="py-5 text-light">
+                <p><span class="custom-color">Designed by :</span> Frontend Developer/ Noha Salim .</p>
+            </div>
+        </div>
+    </footer>
+    <div class="up position-fixed custom-position-up d-inline-flex"><a href="#nav"><i
+                class=" custom-color fs-1 fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="down position-fixed custom-position-down d-inline-flex"><a href="#footer"><i
+                class=" custom-color fs-1 fas fa-angle-double-down"></i></a>
+    </div>
+
+
+    <!-- bootstrap.js v-5.3.7 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- WOW.js v-1.1.2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

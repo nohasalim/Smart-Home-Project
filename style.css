@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+a:focus,
+input:focus,
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-collapse {
+  flex-grow: unset;
+}
+.custom-nav-hover:hover {
+  color: #a6c6d3;
+}
+
+.nav-link.active {
+  color: #a6c6d3 !important;
+}
+.custom-position-up {
+  bottom: 80px;
+  right: 30px;
+}
+.custom-position-down {
+  bottom: 30px;
+  right: 30px;
+}
+/*start Home Page Style */
+.home {
+  background-color: #f2f2f2;
+}
+main.home {
+  background-image: url(./Images/home.jpg);
+  background-size: cover;
+}
+section.home-cards {
+  margin-top: -150px;
+}
+
+section.home-cards .cards div.card > img {
+  width: 100px;
+  background-color: #f2f2f2;
+}
+section.about-smart-home {
+  margin-top: 100px;
+}
+section.about-smart-home .image > img {
+  object-fit: cover;
+}
+section.about-smart-home .details button {
+  cursor: pointer;
+  border: 1px solid #71a1b5;
+  border-radius: 50px;
+
+  font-weight: 700;
+  color: #71a1b5;
+  width: 200px;
+}
+section.about-smart-home .details button:hover {
+  color: white;
+  background-color: black;
+}
+section.about-smart-home .details ul li i {
+  font-size: 20px;
+  color: #71a1b5;
+}
+section.manage-everything .cards div.card1 {
+  background-image: url(./Images/outdoor.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+section.manage-everything .cards div.card2 {
+  background-image: url(./Images/tempreture.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+section.manage-everything .cards div.card3 {
+  background-image: url(./Images/tracking.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+section.manage-everything .cards div.card4 {
+  background-image: url(./Images/auto-control.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+section.manage-everything .cards div.card5 {
+  background-image: url(./Images/motion-sensor.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+section.manage-everything .cards div.card6 {
+  background-image: url(./Images/heating-plan.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+section.manage-everything .cards hr {
+  border: none;
+  height: 3px;
+  background-color: white;
+}
+
+section.ready-to-build .bg-image {
+  height: 500px;
+  background-image: url(./Images/news-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.custom-hover:hover {
+  background-color: white;
+  color: black !important;
+}
+.custom2-hover:hover {
+  border: none !important;
+  background-color: black;
+  color: white !important;
+}
+/* .fix-image-height {
+} */
+.image-hover-wrapper {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 0.5rem; /* matches .rounded */
+}
+
+.image-hover-wrapper img {
+  transition: transform 0.5s ease;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-hover-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0); /* transparent initially */
+  transition: background-color 0.4s ease;
+  border-radius: 0.5rem;
+}
+
+.image-hover-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.image-hover-wrapper:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black on hover */
+}
+.custom-height {
+  height: 500px;
+}
+section.our-works .images {
+  margin-top: -250px;
+}
+section.all-devices .bg-image {
+  height: 500px;
+  background-image: url(./Images/news-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* About Us Page Style */
+.custom-bg {
+  background-color: #f1f6f9;
+}
+section.custom-mt {
+  margin-top: -130px;
+}
+.custom-color {
+  color: #71a1b5 !important;
+}
+.custom-border-color {
+  border-color: #71a1b5 !important;
+}
+.icon-bg {
+  background-color: #a6c6d3;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+/* End About Us Page Style */
+/* End Home Page Style */
+/*Start News Page Style */
+body.news {
+  background-color: #cadee6;
+}
+main.news {
+  height: 50vh;
+}
+
+section.news div.image > img {
+  border-radius: 30px 0 0 30px;
+  object-fit: cover;
+}
+section.news div > span {
+  color: #71a1b5;
+}
+section.news div > p {
+  line-height: 2;
+}
+footer div > a.my-ptn,
+section.news div > a {
+  background-color: #71a1b5;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+section.news div > a:hover {
+  background-color: #cadee6;
+  color: black;
+}
+footer div > a.my-ptn:hover {
+  background-color: white;
+  color: black;
+}
+
+footer div > img {
+  width: 150px;
+}
+footer div h4 > img {
+  width: 25px;
+}
+
+footer div.links > a:hover {
+  border-bottom: 1px solid white;
+  width: fit-content;
+}
+
+/* End News Page Style */
+/* FAQ Page Style */
+main.FAQ {
+  background-image: url(./Images/FAQ.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+section.facts-and-questions button.btn-faq,
+section.contact-us form.user-form > input,
+section.contact-us form.user-form > textarea {
+  background-color: #eee;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+section.facts-and-questions button.btn-faq:hover {
+  opacity: 0.5;
+}
+section.contact-us form.user-form {
+  background-color: #eee;
+}
+section.contact-us form.user-form > button {
+  background-color: #71a1b5;
+}
+/* End FAQ Style */
+/* Our Team Page Style */
+section.vision-section .card,
+section.team-info,
+section.know-more {
+  background-color: #f1f6f9;
+}
+section.vision-section {
+  margin-top: -200px;
+}
+main.our-team {
+  background-image: url(./Images/our-team.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.vision-section .card > h2 {
+  color: #71a1b5;
+}
+section.about-smart-home a,
+section.vision-section a.see-all-products,
+section.people-trust-us a.see-all-products {
+  color: #71a1b5;
+  background-color: white;
+  border: solid #71a1b5;
+  letter-spacing: 2px;
+}
+section.vision-section a.see-all-products:hover {
+  color: white;
+  background-color: black;
+  border: none;
+}
+section.people-trust-us a.see-all-products:hover,
+section.about-smart-home a:hover {
+  color: white;
+  background-color: #71a1b5;
+  border: none;
+}
+section.team-info h5.job {
+  color: gray;
+}
+section.know-more h2.number {
+  color: #71a1b5;
+}
+/* End Team Page */
+
+/* Contact Us Page Style */
+main.contact-us {
+  background-image: url(./Images/news-4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+section.our-offices {
+  background-color: #f1f6f9;
+}
+section.our-offices a.g-map {
+  color: black;
+  background-color: #a6c6d3;
+}
+section.our-offices a.g-map:hover {
+  color: white;
+  background-color: black;
+}
+/* End Contact Us Page */
+/* Our Services Page Style */
+main.about-us,
+main.our-services {
+  background-image: url(./Images/news-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main.our-services {
+  height: 50vh;
+}
+section.services-we-provide .card,
+section.about-smart-home .details {
+  background-color: #f1f6f9;
+}
+section.services-we-provide .card > h2 {
+  color: #71a1b5;
+}
+section.smart-camera-control a.custom-hover {
+  color: white;
+}
+section.smart-camera-control a.custom-hover:hover {
+  color: black;
+  background-color: white;
+}
+section.smart-camera-control img,
+section.about-smart-home img {
+  height: 468px;
+  object-fit: cover;
+}
+/* End Our Services Page  */
